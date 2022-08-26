@@ -1,0 +1,21 @@
+@use "variables";
+
+:root {
+    font-size: 18px;
+
+    @media screen and (min-width: 450px) {
+        font-size: 17px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        font-size: 27px;
+    }
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    display: flex;
+    background-color: variables.$Cream;
+    font-weight: 400;
+    flex-direction: column;
+}

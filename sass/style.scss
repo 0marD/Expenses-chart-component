@@ -1,0 +1,165 @@
+@use "variables";
+@use "initial";
+
+.attribution {
+    display: flex;
+    padding: 1em 0;
+    font-size: .7rem;
+    margin: 0 auto;
+}
+
+.attribution a {
+    color: variables.$Dark-brown;
+    font-size: .8;
+    font-weight: 700;
+
+    &:hover {
+        color: variables.$Soft-red;
+        transition: all .3s;
+    }
+}
+
+.container {
+    width: 350px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.section__balance {
+    width: 100%;
+    border-radius: 0.5em;
+    background: variables.$Soft-red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25em 1em;
+    color: variables.$Very-pale-orange;
+
+    &__content {
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        gap: 0.3em;
+
+        &__heading {
+            font-size: 0.7rem;
+        }
+
+        &__balance {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+    }
+
+    &__logo {
+        width: 3em;
+    }
+}
+
+.section__charts {
+    width: 100%;
+    background-color: variables.$Very-pale-orange;
+    border-radius: 0.5rem;
+    padding: 1.5em 1em;
+    color: variables.$Dark-brown;
+
+    &__heading {
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
+
+    &__week {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 1px solid variables.$Soft-red;
+        padding: 4em 0;
+        font-size: 0.7rem;
+        align-items: flex-end;
+        transition: all .3s;
+
+        &__bar {
+            background-color: variables.$Soft-red;
+
+            width: 12%;
+            position: relative;
+            border-radius: 0.5em;
+            transition: all 0.3s;
+
+            &:hover {
+                cursor: pointer;
+                filter: brightness(1.5);
+            }
+
+            &__label {
+                position: absolute;
+                background-color: variables.$Dark-brown;
+                top: -3em;
+                left: -10%;
+                color: variables.$Very-pale-orange;
+                padding: 0.3em;
+                border-radius: 0.5em;
+                width: 110%;
+                text-align: center;
+                font-size: 0.5rem;
+                font-weight: 700;
+                display: none;
+            }
+
+            &__day {
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                bottom: -2em;
+                color: variables.$Medium-brown;
+            }
+        }
+    }
+
+    &__resume {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1.5em;
+        align-items: center;
+
+        &__mothly__head {
+            font-size: 0.8rem;
+            color: variables.$Medium-brown;
+        }
+
+        &__mothly__amount {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        &__comparate {
+            &__data {
+                width: 100%;
+                text-align: right;
+                font-size: 0.9rem;
+                font-weight: 700;
+            }
+
+            &__legend {
+                text-transform: lowercase;
+                font-size: 0.8rem;
+                color: variables.$Medium-brown;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .container {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 500px;
+    }
+}

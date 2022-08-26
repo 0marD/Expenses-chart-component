@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <!-- link font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- css style -->
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./sass/style.css" />
+  <!-- <link rel="stylesheet" href="./sass/style.css.map"> -->
+
+  <script defer type="module" src="./main.js"></script>
+
+  <title>Frontend Mentor | Expenses chart component</title>
+</head>
+
+<body>
+  <main class="container">
+    <section class="section__balance">
+      <div class="section__balance__content">
+        <h2 class="section__balance__content__heading">My balance</h2>
+        <p class="section__balance__content__balance">$921.48</p>
+      </div>
+      <figure class="section__balance__logo">
+        <img src="./images/logo.svg" alt="logo" />
+      </figure>
+    </section>
+
+    <section class="section__charts">
+      <h2 class="section__charts__heading">Spending - Last 7 days</h2>
+      <div class="section__charts__week"></div>
+      <div class="section__charts__resume">
+        <div class="section__charts__resume__monthly">
+          <h3 class="section__charts__resume__mothly__head">
+            Total thi month
+          </h3>
+          <p class="section__charts__resume__mothly__amount">$478.33</p>
+        </div>
+        <div class="section__charts__resume__comparate">
+          <h3 class="section__charts__resume__comparate__data">+2.4%</h3>
+          <p class="section__charts__resume__comparate__legend">
+            From last month
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">&nbsp;Frontend Mentor</a>.
+    Coded by <a href="https://omar-diaz.vercel.app/" target="_blank">&nbsp;Omar Díaz Hernández</a>.
+  </footer>
+</body>
+
+</html>
